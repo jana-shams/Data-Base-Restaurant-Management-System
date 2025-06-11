@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RestaurantManagementSystem
+build_property.RootNamespace = RestaurantManagementSystem
+build_property.ProjectDir = C:\Users\oking\OneDrive\Desktop\Phase 1\RestaurantManagementSystem\RestaurantManagementSystem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\oking\OneDrive\Desktop\Phase 1\RestaurantManagementSystem\RestaurantManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/ChefDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlZkRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/CustomerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/CustomerOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/CustomerReservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJSZXNlcnZhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/CustomerSignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/DishwasherDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzaHdhc2hlckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/EmployeeSignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/HRDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSFJEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/ITSupportDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSVRTdXBwb3J0RGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/ManagerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/MenuPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/OrdersPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/PaymentsPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudHNQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/PromotionsPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvbW90aW9uc1BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/RoleSelection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZVNlbGVjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/SalesDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/SecurityDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VjdXJpdHlEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/ServerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmVyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/Shared/ReservationsPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXFJlc2VydmF0aW9uc1BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oking/OneDrive/Desktop/Phase 1/RestaurantManagementSystem/RestaurantManagementSystem/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ab3flls2ns
