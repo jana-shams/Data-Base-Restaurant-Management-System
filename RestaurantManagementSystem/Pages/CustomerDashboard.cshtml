@@ -1,0 +1,38 @@
+﻿@page
+@model CustomerDashboardModel
+@{
+    ViewData["Title"] = "Customer Dashboard";
+}
+
+<div class="container text-center" data-aos="fade-down" data-aos-duration="1000">
+    <h1 class="mb-4 text-white">Welcome, @Model.CustomerName</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Menu</h5>
+                    <p class="card-text">Browse our delicious menu items.</p>
+                    <a href="/MenuPage" class="btn btn-primary">View Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Orders</h5>
+                    <p class="card-text">Check your past and current orders.</p>
+                    <a href="/CustomerOrders" class="btn btn-primary">View Orders</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Reservations</h5>
+                    <p class="card-text">Manage your reservations effortlessly.</p>
+                    <a href="/CustomerReservations" class="btn btn-primary">View Reservations</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

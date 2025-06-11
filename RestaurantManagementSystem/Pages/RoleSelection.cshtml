@@ -1,0 +1,84 @@
+﻿    @page
+    @model RestaurantManagementSystem.Pages.RoleSelectionModel
+    @{
+        ViewData["Title"] = "Select Your Role";
+    }
+
+    <style>
+        body {
+            background: linear-gradient(to right, #0062E6, #33AEFF);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .role-card {
+            background: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform .2s;
+            
+        }
+
+            .role-card:hover {
+                transform: scale(1.05);
+            }
+
+        .btn-role {
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+
+            .btn-role:hover {
+                opacity: 0.9;
+            }
+
+        .role-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="text-white mb-5" data-aos="fade-down" data-aos-duration="1000">Choose Your Path</h1>
+                <div class="row justify-content-center">
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card role-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <img src="https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Customer" class="role-image">
+                                <h5 class="card-title">Customer</h5>
+                                <p class="card-text">Join us to explore services or products.</p>
+                                <button class="btn btn-primary btn-role" onclick="location.href='/CustomerSignUp'">Sign Up as Customer</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card role-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <img src="https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Employee" class="role-image">
+                                <h5 class="card-title">Employee</h5>
+                                <p class="card-text">Be part of our team to deliver excellence.</p>
+                                <button class="btn btn-primary btn-role" onclick="location.href='/EmployeeSignUp'">Join as Employee</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>

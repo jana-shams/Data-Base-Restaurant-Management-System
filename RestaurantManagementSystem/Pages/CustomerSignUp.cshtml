@@ -1,0 +1,28 @@
+﻿@page
+@model CustomerSignUpModel
+@{
+    ViewData["Title"] = "Customer Sign-Up";
+}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">Customer Sign-Up</h1>
+    <form method="post" class="bg-white p-4 rounded shadow">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="Phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="Phone" name="Phone" required>
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="Email" name="Email" required>
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="Password" name="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+    </form>
+</div>

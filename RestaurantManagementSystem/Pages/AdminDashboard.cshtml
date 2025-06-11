@@ -1,0 +1,28 @@
+﻿@page
+@model AdminDashboardModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">Admin Dashboard</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-primary text-white shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Users</h5>
+                    <p class="card-text">@Model.TotalUsers</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-success text-white shadow">
+                <div class="card-body">
+                    <h5 class="card-title">System Logs</h5>
+                    <p class="card-text">View detailed logs for the system.</p>
+                    <a href="/Logs" class="btn btn-light">View Logs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

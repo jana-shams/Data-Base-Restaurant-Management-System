@@ -1,0 +1,65 @@
+﻿@page
+@model RestaurantManagementSystem.Pages.MenuPageModel
+@using RestaurantManagementSystem.Services
+@inject UserService _userService
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">Our Menu</h1>
+    @if (_userService.IsUserAuthenticated() && _userService.GetUserType() == "Manager")
+    {
+        <h2 class="text-white"> Add Menu Item</h2>
+        <form method="post" asp-page-handler="AddMenuItem" class="bg-white p-4 rounded shadow">
+            <div class="mb-3">
+                <label for="NewMenuItem.Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="NewMenuItem.Name" asp-for="NewMenuItem.Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="NewMenuItem.Description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="NewMenuItem.Description" asp-for="NewMenuItem.Description" required>
+            </div>
+            <div class="mb-3">
+                <label for="NewMenuItem.Price" class="form-label">Price</label>
+                <input type="number" step="0.01" class="form-control" id="NewMenuItem.Price" asp-for="NewMenuItem.Price" required>
+            </div>
+            <div class="mb-3">
+                <label for="NewMenuItem.Category" class="form-label">Category</label>
+                <input type="text" class="form-control" id="NewMenuItem.Category" asp-for="NewMenuItem.Category" required>
+            </div>
+            <div class="mb-3">
+                <label for="NewMenuItem.ImageUrl" class="form-label">Image Url</label>
+                <input type="text" class="form-control" id="NewMenuItem.ImageUrl" asp-for="NewMenuItem.ImageUrl" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Add Item</button>
+        </form>
+    }
+    <div class="row">
+        @foreach (var item in Model.MenuItems)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name" style="max-height:200px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><strong>Price:</strong> $@item.Price</p>
+                        @if (_userService.IsUserAuthenticated() && _userService.GetUserType() == "Manager")
+                        {
+                            <form method="post" asp-page-handler="DeleteMenuItem" class="mt-2">
+                                <input type="hidden" name="menuItemId" value="@item.MenuItemID" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button class="btn btn-primary">Add to Order</button>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

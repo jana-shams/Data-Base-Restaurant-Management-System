@@ -1,0 +1,43 @@
+﻿@page
+@model HRDashboardModel
+@{
+    ViewData["Title"] = "HR Dashboard";
+}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">HR Dashboard</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-primary text-white shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Employees</h5>
+                    <p class="card-text">@Model.TotalEmployees</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <h3 class="text-white">Employee Records</h3>
+        <table class="table table-striped table-hover bg-white shadow">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var employee in Model.Employees)
+                {
+                    <tr>
+                        <td>@employee.EmployeeID</td>
+                        <td>@employee.Name</td>
+                        <td>@employee.Role</td>
+                        <td>@employee.ContactInfo</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+﻿@page
+@model RestaurantManagementSystem.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    body {
+        background: linear-gradient(to right, #0062E6, #33AEFF);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login-card {
+        background: white;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 30px;
+        width: 400px;
+    }
+
+        .login-card h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+    .form-control {
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary, .btn-guest {
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 18px;
+        transition: all 0.3s;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+        .btn-primary:hover, .btn-guest:hover {
+            opacity: 0.9;
+        }
+
+    .signup-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+</style>
+
+<div class="login-card">
+    <h1 class="text-center">Welcome Back!</h1>
+    <form method="post">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="Username" name="Username" placeholder="Username or Email" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="Password" name="Password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Log In</button>
+        <button type="submit" asp-page-handler="GuestLogin" class="btn btn-guest">Continue as Guest</button>
+    </form>
+    <div class="signup-link">
+        <a asp-page="/RoleSelection" class="btn btn-link">Don't have an account? Sign up</a>
+    </div>
+</div>

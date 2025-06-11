@@ -1,0 +1,48 @@
+﻿@page
+@model RestaurantManagementSystem.Pages.CustomerReservationsModel
+@{
+    ViewData["Title"] = "Reservations";
+}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">Your Reservations</h1>
+    <form method="post" asp-page-handler="AddReservation" class="bg-white p-4 rounded shadow">
+        <h2 class="text-black">Add new Reservation</h2>
+        <div class="mb-3">
+            <label for="ReservationDate" class="form-label">Date</label>
+            <input type="date" class="form-control" id="ReservationDate" name="ReservationDate" required>
+        </div>
+        <div class="mb-3">
+            <label for="NumberOfPeople" class="form-label">Number Of People</label>
+            <input type="number" class="form-control" id="NumberOfPeople" name="NumberOfPeople" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Add Reservation</button>
+    </form>
+    <table class="table table-striped table-hover bg-white shadow">
+        <thead>
+            <tr>
+                <th>Reservation ID</th>
+                <th>Date</th>
+                <th>Number of People</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model.Reservations)
+            {
+                <tr>
+                    <td>@reservation.ReservationID</td>
+                    <td>@reservation.ReservationDate.ToShortDateString()</td>
+                    <td>@reservation.NumberOfPeople</td>
+                    <td>
+                        <form method="post" asp-page-handler="DeleteReservation">
+                            <input type="hidden" name="ReservationId" value="@reservation.ReservationID" />
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

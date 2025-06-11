@@ -1,0 +1,11 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="container text-center" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="mb-4 text-white">Oops! Something went wrong.</h1>
+    <p class="text-white">Error Message: @Model.ErrorMessage</p>
+    <a href="/" class="btn btn-primary">Return to Home</a>
+</div>

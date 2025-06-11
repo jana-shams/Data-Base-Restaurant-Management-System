@@ -1,0 +1,19 @@
+﻿@page
+@model DishwasherDashboardModel
+@{
+    ViewData["Title"] = "Dishwasher Dashboard";
+}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">Dishwasher Dashboard</h1>
+    <h3 class="text-white">Pending Cleaning Tasks</h3>
+    <ul class="list-group shadow">
+        @foreach (var task in Model.Tasks)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @task.Description
+                <button class="btn btn-sm btn-success">Mark Complete</button>
+            </li>
+        }
+    </ul>
+</div>

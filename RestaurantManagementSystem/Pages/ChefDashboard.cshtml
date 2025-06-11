@@ -1,0 +1,28 @@
+﻿@page
+@model ChefDashboardModel
+@{
+    ViewData["Title"] = "Chef Dashboard";
+}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">Chef Dashboard</h1>
+    <table class="table table-striped table-hover bg-white shadow">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Menu Item</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>@order.OrderID</td>
+                    <td>@order.MenuItem</td>
+                    <td>@order.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,32 @@
+﻿@page
+@model ManagerDashboardModel
+@{
+    ViewData["Title"] = "Manager Dashboard";
+}
+
+<div class="container" data-aos="fade-down" data-aos-duration="1000">
+    <h1 class="text-center mb-4 text-white">Manager Dashboard</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-primary text-white shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Profit</h5>
+                    <p class="card-text">$@Model.TotalProfit</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-info text-white shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Employees</h5>
+                    <ul>
+                        @foreach (var emp in Model.Employees)
+                        {
+                            <li>@emp.Name - @emp.Role</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
